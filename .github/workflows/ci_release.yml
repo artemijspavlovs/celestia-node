@@ -138,7 +138,7 @@ jobs:
 
       # Generate the binaries and release
       - name: Release publish
-        run: make release
+        run: make goreleaser-docker-release
 
 #          GPG_FINGERPRINT: ${{ steps.import_gpg.outputs.fingerprint }}
 

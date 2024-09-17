@@ -245,7 +245,7 @@ goreleaser-release-dry-run:
 		ghcr.io/goreleaser/goreleaser-cross:${GOLANG_CROSS_VERSION} \
 		--clean --skip=validate --skip=publish --snapshot
 
-goreleaser-release:
+goreleaser-docker-release:
 	@if [ ! -f ".release-env" ]; then \
 		echo "\033[91m.release-env is required for release\033[0m";\
 		exit 1;\
